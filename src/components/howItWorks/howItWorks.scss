@@ -1,0 +1,70 @@
+.howItWorks {
+  max-width: 1080px;
+  margin: 200px auto;
+  text-align: center;
+  @media (max-width: 1200px) {
+    max-width: 600px;
+    margin: 200px auto 100px;
+  }
+  @media (max-width: 600px) {
+    margin: 100px auto 50px;
+  }
+
+  .header {
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 40px;
+  }
+
+  .explanation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px 20px;
+
+    @media (max-width: 1200px) {
+      flex-flow: column;
+    }
+
+    .card {
+      text-align: left;
+      max-width: 320px;
+      @media (max-width: 1200px) {
+        max-width: 600px;
+      }
+
+      .image {
+        display: flex;
+        border: 3px solid #916fdd;
+        background-color: #13b8a5;
+        border-radius: 100%;
+        margin: 40px auto;
+        width: 150px;
+        height: 150px;
+        color: white;
+        .img {
+          width: 100px;
+          height: 100px;
+          margin: auto;
+        }
+      }
+
+      .header2 {
+        font-size: 25px;
+      }
+
+      .description {
+        font-size: 17px;
+      }
+    }
+  }
+  .button {
+    background-color: #916fdd;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 50px auto;
+  }
+}
